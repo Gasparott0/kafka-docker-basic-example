@@ -9,5 +9,4 @@ public class KafkaDockerBasicExampleProducerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(KafkaDockerBasicExampleProducerApplication.class, args);
 	}
-
 }
