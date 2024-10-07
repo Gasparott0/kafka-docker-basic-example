@@ -1,15 +1,17 @@
 services:
 
-  users-db:
-    container_name: users-db
+  kafka-example-db:
+    container_name: kafka-example-db
     image: postgres:latest
     environment:
-      POSTGRES_DB: users-db
+      POSTGRES_DB: kafka-example-db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
       PGDATA: /data/postgres
     networks:
       - kafka-example
+    volumes:
+       - ./data/postgres/data:/var/lib/kafka/data
     ports:
       - "5432:5432"
   

@@ -1,4 +1,4 @@
-package com.gasparott0.producer.kafka;
+package com.gasparott0.producer.api.hero.kafka;
 
 import lombok.RequiredArgsConstructor;
 import org.apache.kafka.clients.admin.NewTopic;
